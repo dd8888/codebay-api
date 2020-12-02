@@ -2,7 +2,6 @@ package codebayapi.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity
 public class User {
@@ -13,6 +12,8 @@ public class User {
     private String email;
     private String city;
     private String birthday;
+
+    //This parameter is created automatically. It must not be used when posting a new user.
     private String creation_date;
 
     public String getName() {
